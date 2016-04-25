@@ -10,5 +10,5 @@
             "email": "khaledkhamis@live.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }

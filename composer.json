@@ -1,0 +1,14 @@
+{
+    "name": "khaledkhamis/teleduino",
+    "description": "A Laravel interface for Teleduino API",
+    "require": {
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "authors": [
+        {
+            "name": "Khaled Khamis",
+            "email": "khaledkhamis@live.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}

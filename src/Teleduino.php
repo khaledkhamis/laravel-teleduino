@@ -10,6 +10,7 @@ namespace Khaledkhamis\Teleduino;
 
 use \GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
+use Illuminate\Support\Facades\Config;
 use League\Flysystem\Exception;
 
 class Teleduino
@@ -23,10 +24,10 @@ class Teleduino
      * @param $key
      * @param $api
      */
-    public function __construct($key,$api='328')
+    public function __construct($api='328')
     {
         $this->api=$api;
-        $this->key = $key;
+        $this->key = Config::get('teleduino.key');
         $this->client = new Client([
             'base_uri' => 'https://us01.proxy.teleduino.org/api/1.0/'.$this->api.'.php',
             'timeout' => 20.0,

@@ -10,5 +10,10 @@
             "email": "khaledkhamis@live.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Khaledkhamis\\Teleduino\\": "src/"
+        }
+    },
     "minimum-stability": "stable"
 }

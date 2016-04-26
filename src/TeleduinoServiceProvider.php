@@ -25,6 +25,5 @@ class TeleduinoServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
     }
 }

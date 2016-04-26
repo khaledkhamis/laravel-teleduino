@@ -38,7 +38,7 @@ class ArduinoController extends Controller
     {
         $myArduino = new Teleduino();	//default for 328
 
-        /*all functions accepts same parameters as the API documentation
+        /*all functions accept same parameters as the API documentation
         **https://www.teleduino.org/documentation/api/328-full
         */
         $myArduino->definePinMode(4,1);

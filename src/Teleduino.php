@@ -32,7 +32,6 @@ class Teleduino
             'base_uri' => 'https://us01.proxy.teleduino.org/api/1.0/'.$this->api.'.php',
             'timeout' => 20.0,
         ]);
-        echo $this->key;
     }
 
     /**

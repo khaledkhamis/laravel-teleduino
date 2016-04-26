@@ -20,6 +20,15 @@ php artisan vendor:publish
 ```
 
 open `config/teleduino.php` and insert your API key from teleduino.org
+
+# Methods for response
+* `getValue()` to get a single value from the response
+* `getValues()` to get all values in the response
+* `hasValues()` check whether there is a value to get
+* `getRequestTime()` request time from the API
+* `isSuccess()` 1:success, 0:failed
+* `getMessage()` returns the output message from the API
+
 # Example
 
 ```php
@@ -43,6 +52,9 @@ class ArduinoController extends Controller
         */
         $myArduino->definePinMode(4,1);
         $myArduino->setDigitalOutput(4,2);
+
+       	//a function with a return
+        $input = $myArduino->getDigitalInput(5)->getValue();
     }
 }
 

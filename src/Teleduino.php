@@ -27,11 +27,12 @@ class Teleduino
     public function __construct($api='328')
     {
         $this->api=$api;
-        $this->key = Config::get('teleduino.key');
+        $this->key = config('teleduino.key');
         $this->client = new Client([
             'base_uri' => 'https://us01.proxy.teleduino.org/api/1.0/'.$this->api.'.php',
             'timeout' => 20.0,
         ]);
+        echo $this->key;
     }
 
     /**

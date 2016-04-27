@@ -24,10 +24,10 @@ class Teleduino
      * @param $key
      * @param $api
      */
-    public function __construct($api='328')
+    public function __construct($key, $api='328')
     {
         $this->api=$api;
-        $this->key = config('teleduino.key');
+        $this->key = $key;
         $this->client = new Client([
             'base_uri' => 'https://us01.proxy.teleduino.org/api/1.0/'.$this->api.'.php',
             'timeout' => 20.0,

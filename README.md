@@ -13,13 +13,7 @@ add Teleduino service provider in `providers` array in `config/app.php`
 Khaledkhamis\Teleduino\TeleduinoServiceProvider::class,
 ```
 
-then publish the configuration file
-
-```
-php artisan vendor:publish
-```
-
-open `config/teleduino.php` and insert your API key from teleduino.org
+Generate a key from teleduino.org
 
 # Methods for response
 * `getValue()` to get a single value from the response
@@ -45,7 +39,7 @@ class ArduinoController extends Controller
 {
     public function setOutput()
     {
-        $myArduino = new Teleduino();	//default for 328
+        $myArduino = new Teleduino('YOUR_API_KEY');	//default for 328
 
         /*all functions accept same parameters as the API documentation
         **https://www.teleduino.org/documentation/api/328-full

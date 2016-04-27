@@ -56,8 +56,8 @@ class Teleduino
     }
 
     /**
-     * @param $pin 0-1
-     * @param $mode 10-20
+     * @param $pin 
+     * @param $mode
      * @return TeleduinoResponse
      */
     public function definePinMode($pin, $mode)
